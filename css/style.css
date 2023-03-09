@@ -1,120 +1,111 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    outline: none;
+    box-sizing: content-box;
     font-family: 'Poppins', sans-serif;
 }
 
 body{
-    background-image: url("/img/backgroundImage.jpg");
-    background-repeat: repeat;
+    background: url("../img/backgroundImage.png");
+    background-repeat: repeat;    
 }
 
 .wrapper{
-    width: 85%;
-    height: 2000px;
-    background-color: #FFFF;
+    width: 1570px;
+    height: 1000px;
+    background-color: #fff;
     margin: auto;
 }
 
-.nav{
+nav{
     width: 100%;
     height: 80px;
-    background: orange;
-}
-
-
-.nav_menu{
+    background-color: orange;
     display: flex;
-    float: right;
-    margin-top: 15px;
+    justify-content: space-between;
+}
+nav img{
+    border-radius: 50%;
+    margin-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
-.nav_menu a{
-    display: inline-block;
+nav ul{
     list-style: none;
+    display: flex;
+}
+
+nav ul li{
+    transition: .8s;
+}
+
+nav ul li:hover{
+    background-color: black;
+}
+nav a{
+    display: inline-block;
     text-decoration: none;
-    font-size: 22px;
-    padding-right: 25px;
-    font-weight: bold;
+    font-size: 20px;
     color: black;
-    transition: 0.5s;
+    padding: 15px 20px;
+    font-weight: bold;
+    transition: .5;
 }
 
-.nav_menu a:hover{
+nav a:hover{
     display: inline-block;
-    list-style: none;
     text-decoration: none;
-    padding-right: 25px;
+    font-size: 20px;
+    color: rgb(188, 238, 9);
+    padding: 15px 20px;
     font-weight: bold;
-    color: rgb(236, 50, 50);
+    /* background-color: black; */
 }
+
 
 .banner{
-    width: auto;
+    display: flex;
+    width: 100%;
     height: 500px;
-    background: linear-gradient(to right, #dcf08e,#FFFF);
-    position: relative;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom right, rgb(236, 234, 207), rgb(229, 247, 164));
+}
+
+.slogan{
+    margin-left: 50px;
+    margin-top: 50px;
+    
+}
+
+.slogan .slogan_1{
+    font-family: 'Sriracha', cursive;
+    font-size: 50px;
+    color: rgb(9, 110, 31);
+}
+
+.slogan .slogan_2{
+    font-family: 'Pattaya', sans-serif;
+    font-size: 100px;
+    color: green;
 }
 
 
-.my_name_section{
-    padding-left: 100px;
-    padding-top: 100px;
-    font-weight: bold;
-}
-
-
-.my_pic{
-    position: absolute;
-    z-index: 1;
-    top: 30px;
-    right: 200px;
-}
 
 .my_pic img{
+    border-radius: 50%;
     width: 400px;
-    border: #146404 solid 10px;
-    border-radius: 100%;
+    border: green solid 10px;
+    margin: 50px 50px 0 0 ;
 }
 
-.my_name_section p{
-    font-size: 30px;
-    display: inline;
+.cards1{
+    display: flex;
+    justify-content: space-around;
 }
 
-.card_section{
-    width: 80%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-}
-
-.card{
-    height: 300px;
-    width: 300px;
-    background-color: #146404;
-    padding-bottom: 50px;
-    display: inline-block;
-}
-.card_1 img{
+.cards1 img{
     width: 200px;
-    height: auto;
+    transition: .8;
 }
-
-.card_2 img{
-    width: 200px;
-    height: auto;
-}
-
-
-.card_3 img{
-    width: 200px;
-    height: auto;
-}
-.card_4 img{
-    width: 200px;
-    height: auto;
-}
-
